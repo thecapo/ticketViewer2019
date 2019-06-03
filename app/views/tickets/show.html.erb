@@ -1,0 +1,18 @@
+<h1>Ticket Viewer</h1>
+
+<p>
+  <strong>Ticket ID:</strong>
+  <%= @showTicket["id"] %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @showTicket["subject"] %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @showTicket["description"] %>
+</p>
+
+<%= link_to 'Back', tickets_path %>
