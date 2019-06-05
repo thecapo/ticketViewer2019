@@ -16,13 +16,16 @@ RSpec.feature "Tickets", :vcr, type: :feature do
       expect(page).to have_content('Oooops, No Tickets Found')
     end
 
-    # dont forget to work on this
+    
+    # # dont forget to work on this
     # scenario 'should not show tickets if api is down' do
     #   visit root_path
-    #   expect(response).to have_http_status(200)
+    #   if (page.status_code == 500)
+    #     expect(page).to 
+    #   end
     # end
   end
-
+  
   context 'show individual ticket' do
     # make text more dynamic
     scenario 'should show an individual ticket if it exist' do
@@ -36,7 +39,20 @@ RSpec.feature "Tickets", :vcr, type: :feature do
       expect(page).to have_content('Description')
       expect(page).to have_link 'Back', href: tickets_path
     end
-    scenario 'ticket does not exist' do
+
+    scenario 'invalid ticket id' do
+      # 404
+      visit "/tickets/1000"
+      expect(page.status_code == 404)
+    end
+
+    scenario 'ticket id does not exist' do
+    end
+
+    scenario 'within pagination' do
+    end
+
+    scenario 'over pagination page' do
     end
   end
 end

@@ -15,7 +15,7 @@
       <% @tickets.each do |ticket| %>
         <tr>
           <td class="ticketID"><%= ticket["id"] %></td>
-          <td><%= ticket["subject"] %></td>
+          <td class="ticketSubject"><%= ticket["subject"] %></td>
           <td class="oneTicket"><%= link_to "Show", ticket_path(ticket["id"]) %></td>
         </tr>
       <% end %>

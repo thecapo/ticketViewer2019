@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 05 Jun 2019 07:55:44 GMT
+      - Wed, 05 Jun 2019 10:15:16 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -25,9 +25,9 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d0757076c656c691b31354ca3109781b81559721343; expires=Thu, 04-Jun-20
-        07:55:43 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=84373e65ecf083c25754eed4ff6561d0eb974ecd-1559721344; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=d9e53d1ccb88fd5a4f9eb08b4c48faf571559729715; expires=Thu, 04-Jun-20
+        10:15:15 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=21c849d6bfc2c4f473bc0defd26a485f00a0d9c8-1559729716; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
@@ -46,13 +46,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Zendesk-Origin-Server:
-      - app26.pod23.use1.zdsys.com
+      - app14.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e2095fff9bd5207-IAD
+      - 4e216260fd8f1d6c-IAD
       X-Runtime:
-      - '0.346167'
+      - '0.388732'
       X-Zendesk-Request-Id:
-      - 2a09e9ae7facd2d2ff95
+      - 502919937f14de298dbe
       X-Content-Type-Options:
       - nosniff
       Expect-Ct:
@@ -60,7 +60,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e2095fff9bd5207-MEL
+      - 4e216260fd8f1d6c-MEL
     body:
       encoding: UTF-8
       string: '{"tickets":[{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/202.json","id":202,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:06:47Z","updated_at":"2019-06-05T06:06:47Z","type":null,"subject":"velit
@@ -1086,7 +1086,7 @@ http_interactions:
         aliquip tempor anim officia elit proident commodo consequat aute. Magna enim
         esse tempor incididunt ipsum dolore Lorem cupidatat incididunt.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["deserunt","enim","est"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true}],"next_page":null,"previous_page":null,"count":100}'
     http_version: 
-  recorded_at: Wed, 05 Jun 2019 07:55:44 GMT
+  recorded_at: Wed, 05 Jun 2019 10:15:16 GMT
 - request:
     method: get
     uri: https://the7thcapo18.zendesk.com/api/v2/tickets/202
@@ -1104,7 +1104,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 05 Jun 2019 07:55:45 GMT
+      - Wed, 05 Jun 2019 10:15:16 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -1112,9 +1112,9 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dbf879c5881590200ecef3ab2f0e895bc1559721344; expires=Thu, 04-Jun-20
-        07:55:44 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=edb9405342fa57c9a8393fa59a4e68d5c5239729-1559721345; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=df5893ca727aacc0df5a5b599df5b1b391559729716; expires=Thu, 04-Jun-20
+        10:15:16 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=21c849d6bfc2c4f473bc0defd26a485f00a0d9c8-1559729716; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
@@ -1133,13 +1133,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Zendesk-Origin-Server:
-      - app3.pod23.use1.zdsys.com
+      - app30.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e2096048f4651ef-IAD
+      - 4e216265ec0251e9-IAD
       X-Runtime:
-      - '0.167245'
+      - '0.149218'
       X-Zendesk-Request-Id:
-      - 70ea1cee30e85bc1ed89
+      - f1db97afd20522381814
       X-Content-Type-Options:
       - nosniff
       Expect-Ct:
@@ -1147,7 +1147,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e2096048f4651ef-MEL
+      - 4e216265ec0251e9-MEL
     body:
       encoding: UTF-8
       string: '{"ticket":{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/202.json","id":202,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:06:47Z","updated_at":"2019-06-05T06:06:47Z","type":null,"subject":"velit
@@ -1160,5 +1160,5 @@ http_interactions:
         eu laborum cillum nostrud eu. Mollit duis qui non ea deserunt est est et officia
         ut excepteur Lorem pariatur deserunt.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["est","incididunt","nisi"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true}}'
     http_version: 
-  recorded_at: Wed, 05 Jun 2019 07:55:45 GMT
+  recorded_at: Wed, 05 Jun 2019 10:15:16 GMT
 recorded_with: VCR 5.0.0
