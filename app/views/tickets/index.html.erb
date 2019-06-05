@@ -14,8 +14,9 @@
     <tbody>
       <% @tickets.each do |ticket| %>
         <tr>
+          <td class="ticketID"><%= ticket["id"] %></td>
           <td><%= ticket["subject"] %></td>
-          <td><%= link_to "Show", ticket_path(ticket["id"]) %></td>
+          <td class="oneTicket"><%= link_to "Show", ticket_path(ticket["id"]) %></td>
         </tr>
       <% end %>
       <tr><%= will_paginate @tickets %></tr>
@@ -23,5 +24,4 @@
   </table>
 
 <% end %>
-
 <br>

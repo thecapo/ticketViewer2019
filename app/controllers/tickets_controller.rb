@@ -6,6 +6,7 @@ class TicketsController < ApplicationController
     response = HTTParty.get('https://the7thcapo18.zendesk.com/api/v2/tickets.json', basic_auth: set_ticket, :headers => {'Content-Type' => 'application/json'} )
     @tickets = response.parsed_response["tickets"]
     @tickets = @tickets.paginate(:page => params[:page], :per_page => 25)
+    # chols
   end
 
   def show
