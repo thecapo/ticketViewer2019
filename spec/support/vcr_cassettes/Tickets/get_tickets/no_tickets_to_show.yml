@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://the7thcapo18.zendesk.com/api/v2/tickets.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic dGhlN3RoY2Fwb0BnbWFpbC5jb206RGVza3RvcFpFTjE=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 05 Jun 2019 05:56:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8464c804508cd7513b1c03cfb8c4a7bc1559714208; expires=Thu, 04-Jun-20
+        05:56:48 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=6ad927c816f3a624638eea8bee207c5f433eb7d3-1559714208; path=/; domain=.the7thcapo18.zendesk.com;
+        HttpOnly
+      X-Zendesk-Api-Version:
+      - v2
+      X-Zendesk-Application-Version:
+      - v2307.25
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit:
+      - '400'
+      X-Rate-Limit-Remaining:
+      - '399'
+      Strict-Transport-Security:
+      - max-age=31536000;
+      Etag:
+      - W/"83a4bb324ee0085190acb072286e76b9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Zendesk-Origin-Server:
+      - app13.pod23.use1.zdsys.com
+      X-Request-Id:
+      - 4e1fe7cb7e951d36-IAD
+      X-Runtime:
+      - '0.141757'
+      X-Zendesk-Request-Id:
+      - 804b679f7f3711a6f620
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4e1fe7cb7e951d36-MEL
+    body:
+      encoding: UTF-8
+      string: '{"tickets":[],"next_page":null,"previous_page":null,"count":0}'
+    http_version: 
+  recorded_at: Wed, 05 Jun 2019 05:56:48 GMT
+recorded_with: VCR 5.0.0
