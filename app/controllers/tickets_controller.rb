@@ -1,17 +1,13 @@
 class TicketsController < ApplicationController
   require 'will_paginate/array'
-			  
+		  
   def index
-    # move the url so it can be reused
-    # if response is not valid
     response = HTTParty.get('https://the7thcapo18.zendesk.com/api/v2/tickets.json', basic_auth: set_ticket, :headers => {'Content-Type' => 'application/json'} )
     @tickets = response.parsed_response["tickets"]
     @tickets = @tickets.paginate(:page => params[:page], :per_page => 25)
-    # chols
   end
 
   def show
-    # move the url so it can be reused
     @urlTicket = "https://the7thcapo18.zendesk.com/api/v2/tickets/#{(params[:id])}" 
     @response = HTTParty.get(@urlTicket, basic_auth: set_ticket, :headers => {'Content-Type' => 'application/json'} )
     @showTicket = @response.parsed_response["ticket"]
