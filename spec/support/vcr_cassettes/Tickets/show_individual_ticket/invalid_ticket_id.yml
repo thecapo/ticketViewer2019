@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the7thcapo18.zendesk.com/api/v2/tickets/1000
+    uri: https://the7thcapo18.zendesk.com/api/v2/tickets/100A0
     body:
       encoding: US-ASCII
       string: ''
@@ -13,53 +13,57 @@ http_interactions:
       - Basic dGhlN3RoY2Fwb0BnbWFpbC5jb206RGVza3RvcFpFTjE=
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 400
+      message: Bad Request
     headers:
       Date:
-      - Wed, 05 Jun 2019 10:26:48 GMT
+      - Fri, 07 Jun 2019 06:45:29 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '163'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dc3ae03ff5e5fdfe762a945a4ab627d6f1559730407; expires=Thu, 04-Jun-20
-        10:26:47 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=2749ef207f1c0ff3c9f43d9f1e956d10a301bf68-1559730408; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=d3b5a5377341ee22a3eb8f2e4faca115b1559889929; expires=Sat, 06-Jun-20
+        06:45:29 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=6b933a476eb319318204a971fdc02c843b7d9b85-1559889929; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
       X-Zendesk-Application-Version:
-      - v2307.25
-      X-Frame-Options:
-      - SAMEORIGIN
+      - v2307.33
       X-Rate-Limit:
       - '400'
       X-Rate-Limit-Remaining:
-      - '398'
+      - '399'
       Strict-Transport-Security:
       - max-age=31536000;
       Cache-Control:
       - no-cache
       X-Zendesk-Origin-Server:
-      - app26.pod23.use1.zdsys.com
+      - app11.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e2173478b4551e3-IAD
+      - 4e30a9dac9b71d78-IAD
       X-Runtime:
-      - '0.218598'
+      - '0.137503'
       X-Zendesk-Request-Id:
-      - c2f9b10a8a1702a662b0
+      - 1915e709238a5a479e42
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e2173478b4551e3-MEL
+      - 4e30a9dac9b71d78-MEL
     body:
       encoding: UTF-8
-      string: '{"error":"RecordNotFound","description":"Not found"}'
+      string: |
+        {
+          "error": {
+            "title": "Invalid attribute",
+            "message": "You passed an invalid value for the id attribute. Invalid parameter: id must be an integer"
+          }
+        }
     http_version: 
-  recorded_at: Wed, 05 Jun 2019 10:26:48 GMT
+  recorded_at: Fri, 07 Jun 2019 06:45:29 GMT
 recorded_with: VCR 5.0.0
