@@ -3,7 +3,7 @@ class TicketsController < ApplicationController
 
   before_action :api_connect, only: [:index, :next_page]
   before_action :one_ticket, only: [:show]
-  
+
   def show
     if @showTicket.nil?
       render file: "#{Rails.root}/public/404.html" , status: :not_found  
@@ -27,8 +27,11 @@ class TicketsController < ApplicationController
   def api_connect
     # gets all tickets
     response = HTTParty.get("https://the7thcapo18.zendesk.com/api/v2/tickets?page=#{(params[:ticket_id])}", basic_auth: set_ticket, :headers => {'Content-Type' => 'application/json'} ) 
-    @ticketsParsed = response.parsed_response["tickets"]
-    @tickets = @ticketsParsed.paginate(:page => params[:page], :per_page => 25)
+    if @ticketsParsed = response.parsed_response["tickets"]
+      @tickets = @ticketsParsed.paginate(:page => params[:page], :per_page => 25)
+    else
+      render file: "#{Rails.root}/public/404.html" , status: :not_found  
+    end
   end
 
   def one_ticket
