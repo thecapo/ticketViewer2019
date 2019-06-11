@@ -22,6 +22,6 @@
       <tr><%= will_paginate @tickets %></tr>
     </tbody>
   </table>
-
+    <tr><%= link_to 'Next 100 Batch', ticket_next_page_path(1) %></tr>
 <% end %>
 <br>

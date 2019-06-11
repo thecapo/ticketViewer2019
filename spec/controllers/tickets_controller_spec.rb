@@ -10,14 +10,10 @@ RSpec.describe TicketsController, type: :controller do
 			expect(request.options[:basic_auth]).to eq({username: 'the7thcapo@gmail.com', password: 'DesktopZEN1'})
 		end
 
-		it "only shows 25 tickets per page" do 
-			basic_auth = {username: 'the7thcapo@gmail.com', password: 'DesktopZEN1'}
-			request = HTTParty::Request.new(Net::HTTP::Get, 'https://the7thcapo18.zendesk.com/api/v2/tickets.json', basic_auth: basic_auth, :headers => {'Content-Type' => 'application/json'} )
-			expect(request.send(:parse_response, json)).to eq({'tickets' => {'ticket' => [{'id' => '202', 'subject' => '"velit eiusmod reprehenderit officia cupidatat"'}]}})
-		end
 	end
 	
 	describe "HTTParty formatting" do
+		
     context "request are to be made" do
       it "returns the json format" do
         request = HTTParty::Request.new 'get', 'https://the7thcapo18.zendesk.com/api/v2/tickets.json', format: :json
@@ -29,6 +25,7 @@ RSpec.describe TicketsController, type: :controller do
         expect(request.format).to be_nil
       end
 		end
+		
 	end
 			
 	# request the tickets for your account, page through tickets when more than 25 are returned
