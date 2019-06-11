@@ -1,30 +1,7 @@
 class TicketsController < ApplicationController
   require 'will_paginate/array'
-
-  before_action :api_connect, only: [:index, :next_page]
-  before_action :one_ticket, only: [:show]
-
-  def show
-    if @showTicket.nil?
-      render file: "#{Rails.root}/public/404.html" , status: :not_found  
-    end 
-  end 
-
-  def catch_404
-    raise ActionController::RoutingError.new(params[:path]) 
-  end
-
-  def not_found
-    raise ActionController::RoutingError.new(params[:path]) 
-  end
-
-  def catch_422
-    raise ActionController::UnknownFormat.new(params[:path]) 
-  end
-
-  private
-
-  def api_connect
+  
+  def index
     # gets all tickets
     response = HTTParty.get("https://the7thcapo18.zendesk.com/api/v2/tickets?page=#{(params[:ticket_id])}", basic_auth: set_ticket, :headers => {'Content-Type' => 'application/json'} ) 
     if @ticketsParsed = response.parsed_response["tickets"]
@@ -34,12 +11,17 @@ class TicketsController < ApplicationController
     end
   end
 
-  def one_ticket
+  def show
     # gets the specific ticket
     @urlTicket = "https://the7thcapo18.zendesk.com/api/v2/tickets/#{(params[:id])}" 
     @response = HTTParty.get(@urlTicket, basic_auth: set_ticket, :headers => {'Content-Type' => 'application/json'} )
     @showTicket = @response.parsed_response["ticket"]
-  end
+    if @showTicket.nil?
+      render file: "#{Rails.root}/public/404.html" , status: :not_found  
+    end 
+  end 
+
+  private
 
   def set_ticket
     auth = {username: "the7thcapo@gmail.com", password: "DesktopZEN1"}
