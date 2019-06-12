@@ -18,7 +18,10 @@ Your company needs you to build a Ticket Viewer that will:
            then click 'Download ZIP' 
            Unzip it then go to that folder.
     
-    ● Go to that directory
+    ● Once inside the folder, run 
+      ```
+      bundle install
+      ```
     ● Once inside the folder, run the app by typing 
       ```
       $ rails s
@@ -29,43 +32,29 @@ Your company needs you to build a Ticket Viewer that will:
       $ localhost:3000
       ```
   ##### Note
-    ● There won't be any tickets in there.
+    ● Tickets are already prepopulated within my account
   
-  #### Usage
-    ● Once done installing the app and assuming it is running on localhost, you can access tickets from Zendesk account.
-      ● If you have no account you can create it here [Zendesk Account](https://www.zendesk.com/register/#getstarted).
+  
+  #### Gems used
 
-    ● Populating your account with dummy data if you have none.
-      ● Copy dummy data here or download it as zip. Click this link [tickets.json](https://gist.github.com/svizzari/c7ffed8e10d3a456b40ac9d18f34289c)
-      ● Create a ticket.json or put the tickets.json file if downloaded inside the app folder. 
-      ● By using curl enter this in the terminal. Make sure the tickets.json is in that folder.
-
-        ```
-        $ curl https://{subdomain}.zendesk.com/api/v2/imports/tickets/create_many.json -v -u {email_address}/token:{token_holder} -X POST -d @tickets.json -H "Content-Type: application/json"
-        ```
-
-        Please note that you have to activate you api by going to settings > channels > api then enable token. You will then receive a token to place inside the ```token_holder```
-    ● Gems used
-
-        Fetching data
+    ● Fetching data
       ```
         HTTParty 
       ```
 
-        Pagination
+    ● Pagination
       ```
         will_paginate
       ```
 
-        Testing 
+    ● Testing 
       ```
         rspec
         vcr
         webmock 
       ```
 
-
-    ```ruby
+    ```ruby sample code
     # app/controllers/tickets_controller.rb
     class TicketsController < ApplicationController
       def index
@@ -85,11 +74,10 @@ Your company needs you to build a Ticket Viewer that will:
     ● ```subdomain``` is your unique identifier
 
   ###### Note 
-    ● Request the tickets for your account, page through tickets when more than 25 are
+    ● Request the tickets in the account, page through tickets when more than 25 are
       returned
     ● Display them in a list
-    ● Display individual ticket details
-
+  
   #### Error Handling
     ● If a user inputs a invalid ticket id an error will come up
     ● If zendesk api is down
@@ -107,9 +95,9 @@ Your company needs you to build a Ticket Viewer that will:
     ```
     
   ###### Note
-    ● Once the testing features is compiled it will create recording of the external api.
+    ● Once the testing features is compiled it the VCR gem will create recordings of the external api.
     ● Testing can be done offline.
-    ● Any changes to the testing will result an error and will need to be updated.
+    ● if VCR sees any changes to the API it will result an error and will need to be updated.
 
   #### Resources
     ● For testing HTTParty 
@@ -127,10 +115,10 @@ Your company needs you to build a Ticket Viewer that will:
       - DRY out the code
   
   #### Challenges
-    ● The zendesk api can only display 100 tickets at a time. It has different endpoint to access it. It is really a challenge figuring how to access the other endpoint. I was able to make it a bit dynamic but I have to manually type it in the browser. The links are just good for two endpoint (200 tickets)
+    ● The zendesk api can only display 100 tickets at a time. It has different endpoint to access it. It is really a challenge figuring how to access the other endpoint. I was able to make it a bit dynamic but I have to manually type it in the browser. The links (previous and next 100 batches) are just good for two endpoint (200 tickets)
   
   #### Learnings
-    ● Improved in uploading to github. Does not do 'git commit -am' because it uploads everything.
+    ● Improved in uploading to github. Cautious with 'git commit -am' because it uploads everything.
     ● In github I am cautious in using 'git push origin -f' almost lost everything.
     ● Learned more about testing.
     ● Found a new gem 'vcr'
