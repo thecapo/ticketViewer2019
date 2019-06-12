@@ -2,6 +2,7 @@
 
 Zendesk is a customer service tool that allows the creation and management of support tickets.
 Your company needs you to build a Ticket Viewer that will:
+
   ● Connect to the Zendesk API
   ● Request the tickets for your account, page through tickets when more than 25 are
     returned
@@ -22,6 +23,7 @@ Your company needs you to build a Ticket Viewer that will:
       ```
       bundle install
       ```
+
     ● Once inside the folder, run the app by typing 
       ```
       $ rails s
@@ -30,9 +32,17 @@ Your company needs you to build a Ticket Viewer that will:
     ● When the app is running enter 
       ```
       $ localhost:3000
+      
       ```
+
+  #### Possible routes to see tickets
+    ● /tickets
+    ● /tickets/:id
+    ● /tickets/:ticket_id/next_page
+
+
   ##### Note
-    ● Tickets are already prepopulated within my account
+    ● Tickets are already prepopulated within my account.
   
   
   #### Gems used
@@ -71,7 +81,7 @@ Your company needs you to build a Ticket Viewer that will:
     Where 
     ● ```set_ticket``` is for basic authorization (required)
       - { username: 'example@zendesk.com', password: 'pa$$word' }
-    ● ```subdomain``` is your unique identifier
+    ● ```subdomain``` is my unique identifier
 
   ###### Note 
     ● Request the tickets in the account, page through tickets when more than 25 are
@@ -80,6 +90,7 @@ Your company needs you to build a Ticket Viewer that will:
   
   #### Error Handling
     ● If a user inputs a invalid ticket id an error will come up
+    ● If no tickets are available
     ● If zendesk api is down
     ● If tickets exists displayed items
 
@@ -95,9 +106,10 @@ Your company needs you to build a Ticket Viewer that will:
     ```
     
   ###### Note
-    ● Once the testing features is compiled it the VCR gem will create recordings of the external api.
+    ● When running 'Testing the features' for the first time it will create a recording of the external api and will place it inside spec/support.
+    ● I also added a feature in VCR where it will record the status of the external api from time to time.
     ● Testing can be done offline.
-    ● if VCR sees any changes to the API it will result an error and will need to be updated.
+    ● If VCR sees any changes to the API it will result an error and will need to be updated.
 
   #### Resources
     ● For testing HTTParty 
@@ -112,10 +124,10 @@ Your company needs you to build a Ticket Viewer that will:
       - How vcr works
     ● Stack Overflow
       - learn more about routing
-      - DRY out the code
+      - DRYing out the code
   
   #### Challenges
-    ● The zendesk api can only display 100 tickets at a time. It has different endpoint to access it. It is really a challenge figuring how to access the other endpoint. I was able to make it a bit dynamic but I have to manually type it in the browser. The links (previous and next 100 batches) are just good for two endpoint (200 tickets)
+    ● The zendesk api can only display 100 tickets at a time. It has different endpoints to access it. It is really a challenge figuring how to access the other endpoints. I was able to make it a bit dynamic but I have to manually type it in the browser. The links (previous and next 100 batches) are just good for covering two endpoint (200 tickets).
   
   #### Learnings
     ● Improved in uploading to github. Cautious with 'git commit -am' because it uploads everything.
