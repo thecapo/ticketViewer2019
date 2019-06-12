@@ -37,6 +37,9 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!
   c.ignore_localhost = true
+  c.default_cassette_options = {
+    re_record_interval: 60 * 30  # in seconds
+  }
 end
 
 RSpec.configure do |config|

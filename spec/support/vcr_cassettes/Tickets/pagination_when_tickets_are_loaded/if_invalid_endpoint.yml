@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the7thcapo18.zendesk.com/api/v2/tickets/100A0
+    uri: https://the7thcapo18.zendesk.com/api/v2/tickets?page=qeqwee
     body:
       encoding: US-ASCII
       string: ''
@@ -17,17 +17,17 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Tue, 11 Jun 2019 14:13:54 GMT
+      - Tue, 11 Jun 2019 14:13:56 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '163'
+      - '167'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d168a7f0797926f43be17a4f1560384d71560262434; expires=Wed, 10-Jun-20
-        14:13:54 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=d6f7e2df89029728526813d74750d17420f34508-1560262434; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=dd2ba078bcf831ce8d32d45b73adf6dde1560262435; expires=Wed, 10-Jun-20
+        14:13:55 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=acd7028af377aa839f3b65f71cd159b4753bd4f0-1560262436; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
@@ -36,34 +36,34 @@ http_interactions:
       X-Rate-Limit:
       - '400'
       X-Rate-Limit-Remaining:
-      - '394'
+      - '391'
       Strict-Transport-Security:
       - max-age=31536000;
       Cache-Control:
       - no-cache
       X-Zendesk-Origin-Server:
-      - app1.pod23.use1.zdsys.com
+      - app20.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e543034dce85201-IAD
+      - 4e54303f980251e9-IAD
       X-Runtime:
-      - '0.139131'
+      - '0.130901'
       X-Zendesk-Request-Id:
-      - c74af1f50e588a4018c3
+      - 4898590d91899448c132
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e543034dce85201-MEL
+      - 4e54303f980251e9-MEL
     body:
       encoding: UTF-8
       string: |
         {
           "error": {
             "title": "Invalid attribute",
-            "message": "You passed an invalid value for the id attribute. Invalid parameter: id must be an integer"
+            "message": "You passed an invalid value for the page attribute. Invalid parameter: page must be an integer"
           }
         }
     http_version: 
-  recorded_at: Tue, 11 Jun 2019 14:13:54 GMT
+  recorded_at: Tue, 11 Jun 2019 14:13:56 GMT
 recorded_with: VCR 5.0.0

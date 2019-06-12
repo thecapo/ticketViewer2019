@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 11 Jun 2019 14:13:50 GMT
+      - Tue, 11 Jun 2019 14:25:49 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -25,9 +25,9 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d934e9195c5914400f45695bdac9ef96e1560262429; expires=Wed, 10-Jun-20
-        14:13:49 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=36284f06af2adf642a58c0a5488af1a8eb3c8313-1560262430; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=da73d7b15a4bc3bb5c6c0b5ba36175a891560263148; expires=Wed, 10-Jun-20
+        14:25:48 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=564c5c9165187abda03106056e70d9435165f7f9-1560263149; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
@@ -38,7 +38,7 @@ http_interactions:
       X-Rate-Limit:
       - '400'
       X-Rate-Limit-Remaining:
-      - '399'
+      - '398'
       Strict-Transport-Security:
       - max-age=31536000;
       Etag:
@@ -46,13 +46,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Zendesk-Origin-Server:
-      - app2.pod23.use1.zdsys.com
+      - app11.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e54301b6df71d42-IAD
+      - 4e5441a74a9e1d42-IAD
       X-Runtime:
-      - '0.348309'
+      - '0.317458'
       X-Zendesk-Request-Id:
-      - e91253bb5385242e986e
+      - c48829dc74f57ccd0a1f
       X-Content-Type-Options:
       - nosniff
       Expect-Ct:
@@ -60,7 +60,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e54301b6df71d42-MEL
+      - 4e5441a74a9e1d42-MEL
     body:
       encoding: UTF-8
       string: '{"tickets":[{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/204.json","id":204,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:06:48Z","updated_at":"2019-06-05T06:06:48Z","type":null,"subject":"ad
@@ -1079,5 +1079,5 @@ http_interactions:
         meatloaf turkey pork belly pork hamburger strip steak kielbasa t-bone venison
         jerky doner. Ground round pork ham cow.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":[],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true}],"next_page":"https://the7thcapo18.zendesk.com/api/v2/tickets.json?page=2","previous_page":null,"count":201}'
     http_version: 
-  recorded_at: Tue, 11 Jun 2019 14:13:50 GMT
+  recorded_at: Tue, 11 Jun 2019 14:25:49 GMT
 recorded_with: VCR 5.0.0

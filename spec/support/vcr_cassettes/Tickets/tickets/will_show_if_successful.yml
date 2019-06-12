@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the7thcapo18.zendesk.com/api/v2/tickets.json
+    uri: https://the7thcapo18.zendesk.com/api/v2/tickets?page=
     body:
       encoding: US-ASCII
       string: ''
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 05 Jun 2019 15:24:01 GMT
+      - Tue, 11 Jun 2019 14:25:48 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -25,14 +25,14 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=da1e3bffa4c4198d18c06bfc8c48e1a531559748241; expires=Thu, 04-Jun-20
-        15:24:01 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=d508b0664e6afbd1091ce8d479eeb48dac64d78c-1559748241; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=d87c7628ab83cc32b785dd8f05d7dbe8f1560263147; expires=Wed, 10-Jun-20
+        14:25:47 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=35d5f39b917a3878edb151cdc02870c62eb86855-1560263148; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
       X-Zendesk-Application-Version:
-      - v2307.25
+      - v2307.38
       X-Frame-Options:
       - SAMEORIGIN
       X-Rate-Limit:
@@ -42,17 +42,17 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=31536000;
       Etag:
-      - W/"3e44d5a26f333f9617c00b47103a5dad"
+      - W/"715d2d3ee55a0be6fa6b49a5505d811b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Zendesk-Origin-Server:
-      - app7.pod23.use1.zdsys.com
+      - app14.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e2326aaccf91d90-IAD
+      - 4e5441a10d651d66-IAD
       X-Runtime:
-      - '0.373932'
+      - '0.335590'
       X-Zendesk-Request-Id:
-      - affeddbc5b5642c365e2
+      - 6407cd24b241055335d1
       X-Content-Type-Options:
       - nosniff
       Expect-Ct:
@@ -60,25 +60,10 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e2326aaccf91d90-MEL
+      - 4e5441a10d651d66-MEL
     body:
       encoding: UTF-8
-      string: '{"tickets":[{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/202.json","id":202,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:06:47Z","updated_at":"2019-06-05T06:06:47Z","type":null,"subject":"velit
-        eiusmod reprehenderit officia cupidatat","raw_subject":"velit eiusmod reprehenderit
-        officia cupidatat","description":"Aute ex sunt culpa ex ea esse sint cupidatat
-        aliqua ex consequat sit reprehenderit. Velit labore proident quis culpa ad
-        duis adipisicing laboris voluptate velit incididunt minim consequat nulla.
-        Laboris adipisicing reprehenderit minim tempor officia ullamco occaecat ut
-        laborum.\n\nAliquip velit adipisicing exercitation irure aliqua qui. Commodo
-        eu laborum cillum nostrud eu. Mollit duis qui non ea deserunt est est et officia
-        ut excepteur Lorem pariatur deserunt.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["est","incididunt","nisi"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true},{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/203.json","id":203,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:06:48Z","updated_at":"2019-06-05T06:06:48Z","type":null,"subject":"excepteur
-        laborum ex occaecat Lorem","raw_subject":"excepteur laborum ex occaecat Lorem","description":"Exercitation
-        amet in laborum minim. Nulla et veniam laboris dolore fugiat aliqua et sit
-        mollit. Dolor proident nulla mollit culpa in officia pariatur officia magna
-        eu commodo duis.\n\nAliqua reprehenderit aute qui voluptate dolor deserunt
-        enim aute tempor ad dolor fugiat. Mollit aliquip elit aliqua eiusmod. Ex et
-        anim non exercitation consequat elit dolore excepteur. Aliqua reprehenderit
-        non culpa sit consequat cupidatat elit.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["amet","labore","voluptate"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true},{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/204.json","id":204,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:06:48Z","updated_at":"2019-06-05T06:06:48Z","type":null,"subject":"ad
+      string: '{"tickets":[{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/204.json","id":204,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:06:48Z","updated_at":"2019-06-05T06:06:48Z","type":null,"subject":"ad
         sunt qui aute ullamco","raw_subject":"ad sunt qui aute ullamco","description":"Sunt
         incididunt officia proident elit anim ullamco reprehenderit ut. Aliqua sint
         amet aliquip cillum minim magna consequat excepteur fugiat exercitation est
@@ -1077,14 +1062,22 @@ http_interactions:
         in.\n\nIncididunt culpa esse magna proident aliquip sunt. Id consequat reprehenderit
         aliquip ipsum laboris amet Lorem quis elit consequat aliquip. Duis aliqua
         anim reprehenderit enim esse deserunt nostrud proident anim magna magna do
-        quis. Nostrud sint et exercitation eiusmod elit.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["fugiat","mollit","quis"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true},{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/301.json","id":301,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:07:14Z","updated_at":"2019-06-05T06:07:14Z","type":null,"subject":"in
+        quis. Nostrud sint et exercitation eiusmod elit.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["fugiat","mollit","quis"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true},{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/301.json","id":301,"external_id":null,"via":{"channel":"api","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-05T06:07:14Z","updated_at":"2019-06-09T04:49:43Z","type":null,"subject":"in
         nostrud occaecat consectetur aliquip","raw_subject":"in nostrud occaecat consectetur
         aliquip","description":"Esse esse quis ut esse nisi tempor sunt. Proident
         officia incididunt cupidatat laborum ipsum duis. Labore qui labore elit consequat.\n\nDo
         id nisi qui et fugiat culpa veniam consequat ad amet ut nisi ipsum. Culpa
         exercitation consectetur adipisicing sunt reprehenderit. Deserunt consequat
         aliquip tempor anim officia elit proident commodo consequat aute. Magna enim
-        esse tempor incididunt ipsum dolore Lorem cupidatat incididunt.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["deserunt","enim","est"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true}],"next_page":null,"previous_page":null,"count":100}'
+        esse tempor incididunt ipsum dolore Lorem cupidatat incididunt.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":["deserunt","enim","est"],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true},{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/302.json","id":302,"external_id":null,"via":{"channel":"web","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-07T03:43:56Z","updated_at":"2019-06-07T03:46:25Z","type":null,"subject":"this
+        is a subject","raw_subject":"this is a subject","description":"public reply
+        with internal note beside it","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":[],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true},{"url":"https://the7thcapo18.zendesk.com/api/v2/tickets/303.json","id":303,"external_id":null,"via":{"channel":"web","source":{"from":{},"to":{},"rel":null}},"created_at":"2019-06-07T04:12:46Z","updated_at":"2019-06-07T04:12:46Z","type":null,"subject":"Bacon
+        ipsum dolor amet ham biltong pork belly rump,","raw_subject":"Bacon ipsum
+        dolor amet ham biltong pork belly rump,","description":"Ground round venison
+        filet mignon strip steak corned beef pork chop. Boudin chuck doner picanha
+        frankfurter. Leberkas cupim ground round tri-tip. Landjaeger bacon chicken,
+        meatloaf turkey pork belly pork hamburger strip steak kielbasa t-bone venison
+        jerky doner. Ground round pork ham cow.","priority":null,"status":"open","recipient":null,"requester_id":381255189933,"submitter_id":381255189933,"assignee_id":381255189933,"organization_id":366999107173,"group_id":360004504793,"collaborator_ids":[],"follower_ids":[],"email_cc_ids":[],"forum_topic_id":null,"problem_id":null,"has_incidents":false,"is_public":true,"due_at":null,"tags":[],"custom_fields":[],"satisfaction_rating":null,"sharing_agreement_ids":[],"fields":[],"followup_ids":[],"brand_id":360002605953,"allow_channelback":false,"allow_attachments":true}],"next_page":"https://the7thcapo18.zendesk.com/api/v2/tickets.json?page=2","previous_page":null,"count":201}'
     http_version: 
-  recorded_at: Wed, 05 Jun 2019 15:24:01 GMT
+  recorded_at: Tue, 11 Jun 2019 14:25:48 GMT
 recorded_with: VCR 5.0.0

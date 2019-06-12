@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://the7thcapo18.zendesk.com/api/v2/tickets/100A0
+    uri: https://the7thcapo18.zendesk.com/api/v2/tickets?page=60
     body:
       encoding: US-ASCII
       string: ''
@@ -13,57 +13,57 @@ http_interactions:
       - Basic dGhlN3RoY2Fwb0BnbWFpbC5jb206RGVza3RvcFpFTjE=
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
       Date:
-      - Tue, 11 Jun 2019 14:13:54 GMT
+      - Tue, 11 Jun 2019 14:13:55 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Content-Length:
-      - '163'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d168a7f0797926f43be17a4f1560384d71560262434; expires=Wed, 10-Jun-20
-        14:13:54 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=d6f7e2df89029728526813d74750d17420f34508-1560262434; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=dce70dfaf3c56b96a769988fe8733246a1560262435; expires=Wed, 10-Jun-20
+        14:13:55 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=7d943372e2fc7b08e2f391db1a8b97c78b17da7e-1560262435; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
       X-Zendesk-Application-Version:
       - v2307.38
+      X-Frame-Options:
+      - SAMEORIGIN
       X-Rate-Limit:
       - '400'
       X-Rate-Limit-Remaining:
-      - '394'
+      - '392'
       Strict-Transport-Security:
       - max-age=31536000;
+      Etag:
+      - W/"1097926aca8e07c947fcf7d7a4c138ee"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Zendesk-Origin-Server:
-      - app1.pod23.use1.zdsys.com
+      - app27.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e543034dce85201-IAD
+      - 4e54303c89cf1d3c-IAD
       X-Runtime:
-      - '0.139131'
+      - '0.162253'
       X-Zendesk-Request-Id:
-      - c74af1f50e588a4018c3
+      - eeaf909f2240768f6a3b
+      X-Content-Type-Options:
+      - nosniff
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e543034dce85201-MEL
+      - 4e54303c89cf1d3c-MEL
     body:
       encoding: UTF-8
-      string: |
-        {
-          "error": {
-            "title": "Invalid attribute",
-            "message": "You passed an invalid value for the id attribute. Invalid parameter: id must be an integer"
-          }
-        }
+      string: '{"tickets":[],"next_page":null,"previous_page":"https://the7thcapo18.zendesk.com/api/v2/tickets.json?page=59","count":201}'
     http_version: 
-  recorded_at: Tue, 11 Jun 2019 14:13:54 GMT
+  recorded_at: Tue, 11 Jun 2019 14:13:55 GMT
 recorded_with: VCR 5.0.0

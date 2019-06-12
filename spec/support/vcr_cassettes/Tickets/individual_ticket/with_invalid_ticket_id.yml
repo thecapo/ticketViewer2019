@@ -17,7 +17,7 @@ http_interactions:
       message: Bad Request
     headers:
       Date:
-      - Tue, 11 Jun 2019 14:13:54 GMT
+      - Tue, 11 Jun 2019 14:25:52 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -25,9 +25,9 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d168a7f0797926f43be17a4f1560384d71560262434; expires=Wed, 10-Jun-20
-        14:13:54 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
-      - __cfruid=d6f7e2df89029728526813d74750d17420f34508-1560262434; path=/; domain=.the7thcapo18.zendesk.com;
+      - __cfduid=d404e43dcbbc17cacb80f13a82ac974a11560263151; expires=Wed, 10-Jun-20
+        14:25:51 GMT; path=/; domain=.the7thcapo18.zendesk.com; HttpOnly
+      - __cfruid=fd0c513a045cdd44bdb955d6222f671289dafa58-1560263152; path=/; domain=.the7thcapo18.zendesk.com;
         HttpOnly
       X-Zendesk-Api-Version:
       - v2
@@ -42,19 +42,19 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Zendesk-Origin-Server:
-      - app1.pod23.use1.zdsys.com
+      - app28.pod23.use1.zdsys.com
       X-Request-Id:
-      - 4e543034dce85201-IAD
+      - 4e5441ba7f1b1d72-IAD
       X-Runtime:
-      - '0.139131'
+      - '0.123253'
       X-Zendesk-Request-Id:
-      - c74af1f50e588a4018c3
+      - 67170a4d3c677fa4ad83
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 4e543034dce85201-MEL
+      - 4e5441ba7f1b1d72-MEL
     body:
       encoding: UTF-8
       string: |
@@ -65,5 +65,5 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Tue, 11 Jun 2019 14:13:54 GMT
+  recorded_at: Tue, 11 Jun 2019 14:25:52 GMT
 recorded_with: VCR 5.0.0
